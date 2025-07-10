@@ -1,9 +1,9 @@
 <?php
-$host = 'mysql.railway.internal';  // Ganti sesuai MYSQLHOST
-$port = '3306';                              // Ganti sesuai MYSQLPORT
-$user = 'root';                               // Ganti sesuai MYSQLUSER
-$pass = 'qyRNBxUsirmKdrSQLYdAzJqHQIGhWkJP';    // Ganti sesuai MYSQL_ROOT_PASSWORD
-$db   = 'railway';                            // Ganti sesuai MYSQLDATABASE
+$host = 'containers-us-west-65.railway.app'; // ✅ ganti ke host publik dari MYSQLHOST
+$port = 13262;                               // ✅ dari MYSQLPORT
+$user = 'root';                              // dari MYSQLUSER
+$pass = 'qyRNBxUsirmkdrSQLYdAzJqHQlGhWkJP';  // ✅ perhatikan huruf besar kecil
+$db   = 'railway';                           // dari MYSQLDATABASE
 
 $koneksi = new mysqli($host, $user, $pass, $db, $port);
 

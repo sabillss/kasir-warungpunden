@@ -1,8 +1,8 @@
 <?php
-$host = 'containers-us-west-65.railway.app';  // public host dari MySQL di Railway
+$host = 'gondola.proxy.rlwy.net'; // ini host dari public network
 $port = 13262;
 $user = 'root';
-$pass = 'qyRNBxUsirmKdrSQLYdAzJqHQIGhWkJP';  // pastikan sesuai persis (huruf besar/kecil sensitif)
+$pass = 'qyRNBxUsirmKdrSQLYdAzJqHQIGhWkJP';  // dari MYSQL_ROOT_PASSWORD
 $db   = 'railway';
 
 $koneksi = new mysqli($host, $user, $pass, $db, $port);

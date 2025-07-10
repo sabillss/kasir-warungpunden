@@ -1,13 +1,11 @@
 <?php
-$host = 'mysql.railway.internal';
-$port = 3306;
+$host = 'containers-us-west-65.railway.app';  // public host dari MySQL di Railway
+$port = 13262;
 $user = 'root';
-$pass = 'qyRNBxUsirmKdrSQLYdAzJqHQlGhWkJP';
+$pass = 'qyRNBxUsirmKdrSQLYdAzJqHQIGhWkJP';  // pastikan sesuai persis (huruf besar/kecil sensitif)
 $db   = 'railway';
 
-$koneksi = new mysqli();
-$koneksi->options(MYSQLI_OPT_CONNECT_TIMEOUT, 5); // waktu timeout dikurangi agar ga lemot
-$koneksi->real_connect($host, $user, $pass, $db, $port);
+$koneksi = new mysqli($host, $user, $pass, $db, $port);
 
 if ($koneksi->connect_error) {
     die("Koneksi gagal: " . $koneksi->connect_error);
